@@ -1,0 +1,122 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<section class="intro">
+  <div class="jumbotron" id="jumbotron">
+  <p class="lead">Hello, world !</p>
+  <h1 class="display-4">My name is Sakthyvell Superamaniam. I build things for the web</h1>
+  <hr class="my-4">
+  <p>I'm a software engineer based in Kuala Lumpur, Malaysia specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.</p>
+  <p class="lead">
+    <a class="btn btn-dark btn-lg more" href="#about" role="button">Learn more</a>
+  </p>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="row">
+  <div class="col-sm-8">
+  <h3 class="section-title">About Me</h3>
+  <p class="about-me">Hello! I'm Sakthyvell, a software engineer based in Kuala Lumpur, Malaysia</p>
+  <p>I enjoy building things that live on the internet that be websites, applications, or anything in between. My goal is to always build things that can solve problems improve one's experience.</p>
+  <p>Shortly after graduating from Manipal International University, I joined the engineering team in Juris Technologies where I work on wide variety of interesting and meaningful projects on a daily basis.</p>
+  <p>Here are a few technologies I've been working with recently:</p>
+  <div class="row">
+    <div class="column">
+    <ul class="technologies">
+    <li>Django REST Framework</li>
+    <li>Flask</li>
+    <li>PHP</li>
+    <li>JavaScript</li>
+    <li>Vue</li>
+    <li>HTML & CSS</li>
+    </ul>
+    </div>
+  </div>
+  </div>
+  <div class="col-sm-4">
+    <img class="profile_pic" src="{{ url_for('static', filename= 'profile.jpeg') }}" alt="not available">
+  </div>
+</div>
+</section>
+
+<section class="experience" id="experience">
+<h3 class="section-title">Where I've worked</h3>
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Juris Technologies</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Jewel Paymentech</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+      <h5>Software Engineer (Aug '20 - Current)</h5>
+      <ul>
+      <li>Co-Developed a multi-channel user engagement platform for banks and financial institution  using a proprietary PHP Framework called PHPLens</li>
+      <li>Designed UI screens using JQuery, AJAX and HTML/CSS</li>
+      <li>Performed Integration Testing and Unit Testing</li>
+      <li>Wrote procedures and scripts to run database-level transactions on Oracle DB using PL/SQL</li>
+      </ul>
+      </div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+      <h5>Software Engineer Intern (Aug '19 - Oct '19)</h5>
+      <ul>
+      <li>Helped in development of Merchant Onboarding Platform using Django Framework and implemented migrations using PostgreSQL/MongoDB</li>
+      <li>Wrote unit tests for backend modules using pytest</li>
+      <li>Won 2nd place in Internal Hackathon for proposing an intent classification model for analysing user comments with accuracy of 78%</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="work" id="work">
+<h3 class="section-title">Some of the things that I've built</h3>
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Human Detection and Tracking UAV</h5>
+    <p class="card-text">In this project, a cost-efficient prototype of a face detection and tracking drone is built. The detection model was trained on a siamese neural network using custom image dataset. The model managed to achieve accuracy of 83%</p>
+    <a href="#" target="_blank" class="btn btn-primary">Watch Demo</a>
+    <a href="https://github.com/Sakthyvell/Face-Detection-and-Tracking-UAV" target="_blank" class="icon-link"><img class = 'icon-link' src="{{ url_for('static', filename='icons/github.webp') }}" alt="github"></a>
+    
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Emotion Detection Based Patient Monitoring System</h5>
+    <p class="card-text">In this project, an emotional recognition modal was developed to identify the emotional state of the patient through the camera feed. The model using the FERC dataset comprising of 7 emotions. The measurements are transmitted to a web server using web sockets. This protype was used and tested in the campus clinic.</p>
+    <a href="https://ieeexplore.ieee.org/document/9250950" target="_blank" class="btn btn-primary">View Publication</a>
+    <a href="https://github.com/Sakthyvell/Patient-Monitoring-System" target="_blank" class="icon-link"><img class = 'icon-link' src="{{ url_for('static', filename='icons/github.webp') }}" alt="github"></a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h3 class="section-title">Get In Touch</h3>
+<p>My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+<a href="mailto:sakthyvell@outlook.com" class="btn btn-dark btn-lg">Say Hello</a>
+</section>
+
+<footer class="footer">
+<p>Built by Sakthy. Powered by Flask &copy;2021</p>
+</footer>
+{% endblock %}
