@@ -1,15 +1,19 @@
+import os
+
 from flask import Flask, render_template
 
 
-app = Flask(__name__)
+def create_app(test_config=None):
+    
+    # create and configure the app
+    app = Flask(__name__, instance_relative_config=True)
+
+    @app.route('/')
+    def home():
+        return render_template("index.html");
+
+    return app
 
 
-@app.route('/')
-@app.route('/index')
-@app.route('/home')
-def main():
-    return render_template('home.html')
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    create_app()
