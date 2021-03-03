@@ -1,123 +1,123 @@
-
 body {
-    background: black;
-    color: white;
-    position: relative;
-    overflow-x: hidden;
-    
+  background: black;
+  color: white;
+  position: absolute;
+  overflow-x: hidden;
+  background-image: url("wallpaper.jpg");
 }
 
 section {
-    margin : 50px;
-    padding-bottom : 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 footer {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .nav-link {
-    padding-top: 50px;
-    color: white;
-    font-size: 16px;
+  padding-top: 50px;
+  color: white;
+  font-size: 16px;
 }
 
 .nav-link .resume-link {
-    border: 1px solid red;
-    border-radius: 5px;
+  border: 1px solid red;
+  border-radius: 5px;
 }
 
 .nav-link:hover {
-    color : #950740;
+  color: #950740;
 }
 
-
 .jumbotron {
-    background: none;
+  background: none;
 }
 
 .btn {
-    background: none;
-    border: 2px solid #950740;
-    border-radius: 10px;
+  background: none;
+  border: 2px solid #950740;
+  border-radius: 10px;
 }
 
 .btn:hover {
-    background: #950740;
-    color: black;
-    border: none;
+  background: #950740;
+  color: black;
+  border: none;
 }
 
 .btn:active {
-    background: #950740;
-    color: black;
-    border : none;
-    word-wrap: normal;
+  background: #950740;
+  color: black;
+  border: none;
+  word-wrap: normal;
 }
 
 .technologies {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-    column-gap: 20px;
-    color : lightgray;
-    font-size: 12px;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  column-gap: 20px;
+  color: lightgray;
+  font-size: 12px;
 }
 
-.list-group-item{
-    background: none;
-    border-radius: 10px;
-    margin: 10px;
-    color: white;
+.list-group-item {
+  background: none;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
 }
 
-.list-group-item:hover{
-    background: #950740;
-    color: black;
+.list-group-item:hover {
+  background: #950740;
+  color: black;
 }
 
-.list-group-item.active{
-    background: #950740;
-    color: black;
-    border : none;
+.list-group-item.active {
+  background: #950740;
+  color: black;
+  border: none;
 }
 
 .card-header {
-    background: black;
-    border: none;
+  background: black;
+  border: none;
 }
 
-.card-body{
-    background: black;
+.card-body {
+  background: black;
 }
 
 .card {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.section-title{
-    margin-bottom: 20px;
+.section-title {
+  margin-bottom: 20px;
 }
 
-.footer, .contact {
-    margin: auto;
-    text-align: center;
+.footer,
+.contact {
+  margin: auto;
+  text-align: center;
 }
 
 .profile_pic {
-    width: 300px;
-    height : 300px;
-    margin : auto;
-    filter: grayscale(100%);
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  filter: grayscale(100%);
 }
 
-.profile_pic:hover{
-    filter: grayscale(0%);
+.profile_pic:hover {
+  filter: grayscale(0%);
 }
 
 .icon-link {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
