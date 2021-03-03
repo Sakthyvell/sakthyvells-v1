@@ -1,1 +1,1 @@
-web:gunicorn app:sakthyvells.com
+web: gunicorn app:app
