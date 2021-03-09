@@ -1,12 +1,13 @@
 body {
+  margin : 0 auto;
   background: black;
   color: white;
-  position: absolute;
   overflow-x: hidden;
   background-image: url("wallpaper.jpg");
 }
 
 section {
+  justify-content: center;
   margin: 0 auto;
   width: 100%;
   padding-bottom: 100px;
@@ -70,17 +71,20 @@ footer {
   border-radius: 10px;
   margin: 10px;
   color: white;
+  left : -50px;
 }
 
 .list-group-item:hover {
   background: #950740;
   color: black;
+  padding-right: 50px;
 }
 
 .list-group-item.active {
   background: #950740;
   color: black;
   border: none;
+  padding-right: 50px;
 }
 
 .card-header {
@@ -120,4 +124,18 @@ footer {
 .icon-link {
   width: 50px;
   height: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .list-group-item, .list-group-item:hover, .list-group-item:active {
+    font-size: 10px;
+  }
+
+
+
+@media only screen and (max-width: 450px) {
+  .list-group-item, .list-group-item:hover, .list-group-item:active {
+    font-size: 8px;
+  }
 }
